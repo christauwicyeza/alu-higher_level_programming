@@ -21,4 +21,3 @@ def islower(strs):
         return True
     else:
         return False
-        
