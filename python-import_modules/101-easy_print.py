@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-exec("import subprocess; subprocess.call(\"echo '#pythoniscool'\",shell=True)")
+__import__("easy_print").customwrite("#pythoniscool")
