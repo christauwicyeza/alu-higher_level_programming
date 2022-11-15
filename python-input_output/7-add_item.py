@@ -11,6 +11,6 @@ load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 try:
     loadfile = load_from_json_file( add_item.json )
 except FileNotFoundError:
-    data = []
+    loadfile = []
 
 save_to_json_file(loadfile + argv[1:], add_item.json )
