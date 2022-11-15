@@ -1,18 +1,20 @@
 #!/usr/bin/python3
-"""
-Module 7-add_item.py
-"""
+""" 7-add_item.py """
 
 
-from sys import argv
-save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
-load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
+import sys
 
-f_name = "add_item.json"
+if __name__ == "__main__":
+    save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+    load_from_json_file = __import__('6-load_from_json_file') \
+        .load_from_json_file
 
-try:
-    data = load_from_json_file(f_name)
-except FileNotFoundError:
-    data = []
+    try:
+        loadFile = load_from_json_file("add_item.json")
+    except FileNotFoundError:
+        loadFile = []
 
-save_to_json_file(data + argv[1:], f_name)
+    argc = len(sys.argv)
+    for idx in range(1, argc):
+        loadFile.append(sys.argv[idx])
+        
