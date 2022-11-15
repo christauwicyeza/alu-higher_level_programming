@@ -1,14 +1,30 @@
-able File  12 lines (9 sloc)  222 Bytes
+>>> MyList = __import__('1-my_list').MyList
 
-#!/usr/bin/python3
-"""Defines an inherited list class MyList."""
+>>> new_list = MyList()
 
+>>> new_list
+[]
 
-class MyList(list):
-  """
-Implements.
-"""
+>>> new_list.print_sorted()
+[]
 
-def print_sorted(self):
-        """Print a list in sorted ascending order."""
-        print(sorted(self))
+>>> new_list.append(4)
+
+>>> new_list
+[4]
+
+>>> new_list.append(2)
+
+>>> new_list
+[4, 2]
+
+>>> new_list.append(-1)
+
+>>> new_list
+[4, 2, -1]
+
+>>> new_list.print_sorted()
+[-1, 2, 4]
+
+>>> new_list
+[4, 2, -1]
