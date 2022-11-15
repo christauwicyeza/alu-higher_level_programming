@@ -1,30 +1,12 @@
->>> MyList = __import__('1-my_list').MyList
+#!/usr/bin/python3
+""""List inheritance"""
 
->>> new_list = MyList()
 
->>> new_list
-[]
+class MyList(list):
+    """Class MyList inherits list."""
 
->>> new_list.print_sorted()
-[]
-
->>> new_list.append(4)
-
->>> new_list
-[4]
-
->>> new_list.append(2)
-
->>> new_list
-[4, 2]
-
->>> new_list.append(-1)
-
->>> new_list
-[4, 2, -1]
-
->>> new_list.print_sorted()
-[-1, 2, 4]
-
->>> new_list
-[4, 2, -1]
+    def print_sorted(self):
+        """Prints sorted lists."""
+        temp_list = self[:]
+        temp_list.sort()
+        print("{}".format(temp_list))
