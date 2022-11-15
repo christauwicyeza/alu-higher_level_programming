@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Reads from standard input and computes metrics."""
+"""Read from standard input and computes metrics."""
 
 
 def print_stats(size, status_codes):

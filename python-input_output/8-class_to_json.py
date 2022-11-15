@@ -6,6 +6,6 @@ Module 8-class_to_json.py
 
 def class_to_json(obj):
     """
-     returns the dictionary"""
+     return the dictionary"""
 
     return obj.__dict__

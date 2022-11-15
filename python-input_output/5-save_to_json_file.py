@@ -5,7 +5,7 @@ Module 5-save_to_json_file.py
 
 
 def save_to_json_file(my_obj, filename):
-    """writes an Obj to a text file, using a JSON representation"""
+    """write an Obj to a text file, using a JSON representation"""
 
     import json
 

@@ -6,7 +6,7 @@ Module 12-pascal_triangle.py
 
 def pascal_triangle(n):
     """
-    returns a list of lists of integers representing
+    return the list of lists of integers representing
 """
 
     if n <= 0:
