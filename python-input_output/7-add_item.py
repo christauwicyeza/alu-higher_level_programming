@@ -15,4 +15,4 @@ try:
 except FileNotFoundError:
     data = []
 
-save_to_json_file(data + argv[1:], file_name)\
+save_to_json_file(data + argv[1:], file_name)
