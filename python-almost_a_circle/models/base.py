@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+
 """Class Base"""
+
 
 import json
 
@@ -54,7 +56,7 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
-        """returns the list of the JSON string representation json_string"""
+        """return  list of the JSON string representation json_string"""
         if json_string is None or \
                 len(json_string) == 0:
             return list()
@@ -63,7 +65,7 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        """ returns an instance with all attributes already set"""
+        """ return an instance with all attributes already set"""
         if cls.__name__ == "Rectangle":
             dummy_instance = cls(4, 3)
         if cls.__name__ == "Square":
